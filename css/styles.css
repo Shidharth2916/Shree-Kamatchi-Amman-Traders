@@ -3,78 +3,193 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    color: #4b3d3d; /* Dark vintage color */
+    background-color: #f9f3e9; /* Light vintage background */
+}
+
+/* Header */
+header {
+    background-color: #e6d8c2; /* Soft vintage beige */
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    color: #4b3d3d;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #4b3d3d;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #ff6600, #ffa73d);
-    color: #fff;
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
-    overflow: hidden;
+    padding: 20px;
 }
 
-.maintenance-container {
-    text-align: center;
+.hero-content {
+    background-color: rgba(75, 61, 61, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.logo h1 {
-    font-size: 3rem;
-    color: #fff;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.content h2 {
+.hero-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: #fff;
-    font-weight: bold;
-    animation: fadeInUp 2s ease-in-out;
+    margin-bottom: 10px;
 }
 
-.content p {
+.hero-content p {
     font-size: 1.2rem;
-    color: #f4f4f4;
     margin-bottom: 20px;
-    max-width: 500px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-    animation: fadeInUp 2.5s ease-in-out;
 }
 
-.loader {
-    border: 10px solid rgba(255, 255, 255, 0.3);
-    border-top: 10px solid #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin: 30px auto;
-    animation: spin 2s linear infinite;
+.cta-btn {
+    display: inline-block;
+    background-color: #4b3d3d; /* Dark vintage color */
+    color: #f9f3e9; /* Light vintage color */
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #6b5d5d; /* Lighter vintage color */
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e6d8c2; /* Soft vintage beige */
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* Products Section */
+.products {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.product-item {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e6d8c2; /* Soft vintage beige */
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.enquiry-form {
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.enquiry-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b3d3d; /* Dark vintage color */
+    color: #f9f3e9; /* Light vintage color */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enquiry-form button:hover {
+    background-color: #6b5d5d; /* Lighter vintage color */
+}
+
+/* Footer */
+footer {
+    background-color: #4b3d3d; /* Dark vintage color */
+    color: #f9f3e9; /* Light vintage color */
+    text-align: center;
+    padding: 20px 0;
 }
 
 footer p {
-    font-size: 1rem;
-    color: #eee;
-    animation: fadeInUp 3s ease-in-out;
-}
-
-/* Keyframes for Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    margin: 0;
+    font-size: 0.9rem;
 }
