@@ -3,24 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Under Maintenance | Kannan Calendars</title>
+    <title>Kannan Calendars</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="maintenance-container">
-        <div class="logo">
-            <h1>Kannan Calendars</h1>
+    <header>
+        <div class="container">
+            <h1 class="logo">Kannan Calendars</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="content">
-            <h2>We'll Be Right Back</h2>
-            <p>Our website is currently undergoing scheduled maintenance. We apologize for any inconvenience and appreciate your patience.</p>
-            <p><strong>Thank you for choosing Kannan Calendars.</strong></p>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Crafting Timeless Moments</h2>
+            <p>Celebrating 30 Years of Excellence in Calendars, Diaries & Notebooks</p>
+            <a href="#products" class="cta-btn">Explore Our Collection</a>
         </div>
-        <div class="loader"></div>
-        <footer>
-            <p>Contact us at: kcitdesk@gmail.com</p>
-        </footer>
-    </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Kannan Calendars has been a pioneer in manufacturing quality calendars, diaries, and notebooks for over three decades. Our dedication to craftsmanship ensures every product embodies timeless elegance.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Custom Calendar Design</h3>
+            <p>Personalized designs reflecting your unique style.</p>
+        </div>
+        <div class="service-item">
+            <h3>Diary Manufacturing</h3>
+            <p>Stylish and functional diaries for every occasion.</p>
+        </div>
+        <div class="service-item">
+            <h3>Notebook Production</h3>
+            <p>High-quality notebooks for all your creative needs.</p>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Explore Our Products</h2>
+        <div class="product-item">
+            <h3>Calendars</h3>
+            <p>Elegant wall and desk calendars tailored for your space.</p>
+        </div>
+        <div class="product-item">
+            <h3>Diaries</h3>
+            <p>Discover diaries designed for capturing your thoughts.</p>
+        </div>
+        <div class="product-item">
+            <h3>Notebooks</h3>
+            <p>Stylishly crafted notebooks for every idea.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@kannancalendars.com | Phone: +91 1234 567890</p>
+        <form class="enquiry-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Enquiry</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kannan Calendars. All rights reserved.</p>
+    </footer>
 </body>
 </html>
